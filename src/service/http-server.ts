@@ -99,6 +99,7 @@ export class HttpServer {
       domain: req.query.domain,
       timezone: req.query.timezone,
       encoding: req.query.encoding,
+      jsonData: req.query.jsonData,
     };
     this.log.debug('Render request received', 'url', options.url);
     req.on('close', err => {

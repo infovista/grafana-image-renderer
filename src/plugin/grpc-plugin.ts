@@ -85,6 +85,7 @@ export class GrpcPlugin {
       domain: req.domain,
       timezone: req.timezone,
       encoding: req.encoding,
+      jsonData: req.jsonData,
     };
 
     try {

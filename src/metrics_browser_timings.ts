@@ -46,4 +46,10 @@ export class MetricsBrowserTimings {
     await callback();
     timer();
   }
+
+  async pdf(callback: () => Promise<void>) {
+    const timer = this.durationHistogram.startTimer({ step: 'pdf' });
+    await callback();
+    timer();
+  }
 }
